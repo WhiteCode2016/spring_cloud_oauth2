@@ -1,0 +1,5 @@
+rootProject.name = 'spring_cloud_oauth2'
+include 'whitecode-cloud-center'
+include 'whitecode-oauth-server'
+include 'whitecode-order-service'
+include 'whitecode-api-gateway'

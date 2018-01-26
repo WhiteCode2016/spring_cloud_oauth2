@@ -1,0 +1,15 @@
+archivesBaseName = 'spring_cloud_oauth2'
+dependencies {
+	compile('org.springframework.cloud:spring-cloud-starter-eureka-server')
+	compile('org.springframework.cloud:spring-cloud-starter-oauth2')
+	compile('org.springframework.cloud:spring-cloud-starter-security')
+	compile('org.springframework.boot:spring-boot-starter')
+	compile('org.springframework.boot:spring-boot-starter-web')
+//	compile('org.springframework.boot:spring-boot-starter-actuator')
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
+}
